@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'canarow00-boldregular';
+    src: url('../fonts/canaro_w00_bold-webfont.woff2') format('woff2'),
+         url('../fonts/canaro_w00_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'canarolight_demo';
+    src: url('../fonts/canaro-lightdemo-webfont.woff2') format('woff2'),
+         url('../fonts/canaro-lightdemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'astronautregular';
+    src: url('../fonts/astronau-webfont.woff2') format('woff2'),
+         url('../fonts/astronau-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'azedobold';
+    src: url('../fonts/azedo-bold.woff2') format('woff2'),
+         url('../fonts/azedo-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{font-size: 14px; font-family: 'canarolight_demo';color: #292929;display: inline-block;width: 100%;}
+h1 {font-family: 'canarow00-boldregular';color: #fff; text-align: center;}
+h2 {font-family: 'canarow00-boldregular';color: #292929; text-align: center;margin: 0;}
+h4 {font-family: 'canarow00-boldregular';text-transform: uppercase;}
+h5 {font-family: 'canarow00-boldregular';margin-top: 0;}
+p{font-size: 16px;}
+a{outline: none; text-decoration: none;}
+a:hover{outline: none; text-decoration: none;}
+
+
+
+/*LEFT SECTION CSS STARTS*/
+.left-sec { background: #484848;width: 20%;float: left;}
+.logo{background: #3c3c3c;}
+.logo img {max-width: 45px;margin: 0 auto;padding: 5px 5px;}
+
+/*LEFT BOTTOM SECTION CSS STARTS*/
+.left-bottom {padding: 20px 0;}
+.left-sec ul{list-style: none; padding: 0; margin: 0;}
+.left-sec ul li a {color: #fff;font-size: 15px;padding: 15px 30px;display: inline-block;width: 100%;position: relative;}
+.left-sec ul li a:hover{background: #3c3c3c; color: #fff;font-family: 'canarow00-boldregular';}
+.left-bottom ul li a:before{content: "";font-family: 'FontAwesome'; position: absolute; right: 20px;}
+.left-bottom ul li a:hover:before{content: "\f178";}
+
+/*FAV SECTION CSS STARTS*/
+.fav-sec{background: #343434;font-family: 'canarow00-boldregular'; padding: 30px 20px;color: #fff;}
+.red-btn{background: #ea0303;font-family: 'canarolight_demo'; color: #fff; font-size: 17px; transition: all ease 0.5s;}
+.fav-sec .red-btn {margin-top: 15px;}
+.red-btn:hover, .red-btn:focus{background: #c40909; color: #fff;border-radius: 20px;}
+
+/*NOTIFY SECTION CSS STARTS*/
+.notify-sec {padding: 20px 0;}
+.notify-sec ul li a span {background: #3c3c3c;float: right;border-radius: 10px;padding: 1px 10px;}
+.add-sec{background: #343434;padding: 100px 0; text-align: center; text-transform: uppercase;font-family: 'canarow00-boldregular';color: #fff;}
+
+/*RIGHT SECTION CSS STARTS*/
+.right-sec{width: 80%; float: left;}
+.right-top{background: #292929; float: left;width: 100%;}
+.right-top-left{width: 50%; float: left;position: relative;padding: 15px 0 15px 0px;}
+.serach-box {position: relative;padding: 0px 0 0px 30px;color: #fff;}
+.menu-icon{display: none;}
+.search-icon{position: absolute; left: 10px; top: 50%; transform: translateY(-50%);}
+.right-top-left .form-control {background: transparent;border: 0;border-radius: 0;padding: 5px 0; box-shadow: none; color: #fff;}
+.right-top-left .form-control{box-shadow: none;}
+.serach-box .form-control:focus {border: 0;}
+.right-top-right{width: 50%; display: table; text-align: right;}
+.upload {padding: 15px 20px;display: table-cell;vertical-align: middle;}
+.white-btn {background: #fff;color: #292929; outline: none;font-size: 16px; transition: all ease 0.5s;}
+.white-btn:hover, .white-btn:focus{background: #c40909; color: #fff;border-radius: 20px;}
+.sign {background: #ea0303;display: table-cell;vertical-align: middle;}
+.sign a {color: #fff;display: block;width: 100%;text-align: center; font-size: 16px;}
+
+/*BANNER SECTION CSS STARTS*/
+.right-bottom {display: inline-block;width: 100%;padding: 20px 40px;}
+.banner-sec {display: inline-block;width: 100%;}
+.item-bg1{background: url(../images/banner.jpg) no-repeat center center/cover; padding: 15% 0; position: relative;}
+.banner-text{position: absolute; left: 2%; top: 50%; transform: translateY(-50%);text-align: center;}
+.banner-text h1 {font-size: 70px;font-family: 'astronautregular'; color: #ea0303;text-transform: uppercase;margin: 0;}
+.activity{background: #ea0303;}
+.banner-text h2 { text-transform: uppercase;margin: 0;font-family: 'azedobold';position: relative;
+top: -7px;color: #fff;}
+.banner-text p {margin: 10px 0;color: #fff;}
+.banner-text .white-btn{color: #ea0303;font-family: 'canarow00-boldregular';font-size: 15px;padding: 6px 20px;}
+.banner-text .white-btn:hover{color: #fff;}
+
+/*VIDEOS SECTION CSS STARTS*/
+.video-sec{color: #292929;border-bottom: 1px solid #ddd;}
+.video-sec:last-child{border: 0;}
+.video-div {margin: 10px 0;color: #292929;cursor: pointer;}
+.right-bottom h3{font-family: 'canarow00-boldregular'; color: #292929;}
+.video-img {position: relative;}
+.video-img img{border-radius: 10px;}
+.video-time {position: absolute;background: rgba(0,0,0,0.7);bottom: 10px;left: 10px;border-radius: 4px;color: #fff;padding: 6px 12px;}
+.video-des{font-family: 'canarow00-boldregular';margin: 5px 0;}
+.video-activity {margin: 5px 0;color: #848484;display: inline-block;width: 100%;font-size: 12px;}
+.video-activity-left{width: 40%; float: left;}
+.video-activity-right{width: 60%; float: left;text-align: right;}
+.video-activity-right span {margin: 0 0 0 10px;cursor: pointer;}
+.video-love:hover {color: #ea0303;}
+.count {margin: 0 !important;}
+.video-sec .owl-nav.disabled {display: block !important;}
+.video-sec .owl-prev {position: absolute;top: 30%;left: -20px;font-size: 25px;}
+.video-sec .owl-next {position: absolute;top: 30%;right: -20px;font-size: 25px;}
+
+/*BOTTOM SECTION CSS STARTS*/
+.bottom-banner{padding: 40px 40px;}
+.bottom-banner img{margin: 0 auto;}
+footer{border-top: 1px solid #ddd; padding: 10px 0px;}
+.foot-nav{padding: 0; margin: 0; list-style: none; text-align: center;}
+.foot-nav li{display: inline-block; padding: 20px 10px;}
+.foot-nav li a{color: #292929;}
+.copy{text-align: center; color: #292929;}
+
+/*ABOUT PAGE CSS STARTS*/
+.about-banner{background: url(../images/banner.jpg) no-repeat center center/cover; padding: 10% 0;}
+.about-sec{padding: 40px 0; display: table; width: 100%;}
+.about-sec img{width: 100%;}
+.about-left{display: table-cell; width: 50%; vertical-align: middle;padding-right: 20px;}
+.about-right{display: table-cell; width: 50%; vertical-align: middle;}
+.team-sec {float: left;width: 100%;background: #f2f2f2;padding: 20px 0px;}
+.team-div{position: relative; text-align: center;margin-top: 30px;padding: 10px 10px;overflow: hidden;}
+.team-div img{width: 200px; height: 200px; border-radius: 50%; margin: 0 auto;}
+.team-over{position: absolute; top: 110%; left: 0; right: 0; background: rgba(0,0,0,0.8);transition: all ease 0.4s;}
+.social{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);width: 100%;}
+.social a {color: #fff;padding: 5px 8px;font-size: 15px;border: 1px solid #fff;}
+.team-div:hover .team-over{top: 0; bottom: 0;}
+
+
+/*CONTACT PAGE CSS STARTS*/
+.contact-sec {padding: 40px 0;}
+.contact-sec p{text-align: center; margin: 10px 0;}
+.addr {width: 100%;display: inline-block;border-top: 1px solid #eaeaea;border-bottom: 1px solid #eaeaea;padding: 20px 0;margin-top: 20px;}
+.phn-icon {width: 50%;float: left;position: relative;padding-left: 35px;font-size: 20px;}
+.phn-icon i {position: absolute;left: 0;top: 0;color: #ea0303;}
+.phn-name {font-size: 18px;text-transform: uppercase;color: #5e534c;font-family: 'canarow00-boldregular';}
+.phn-text {font-size: 16px;color: #717171;overflow-wrap: break-word;line-height: 30px;}
+.location{width: 100%;display: inline-block;border-bottom: 1px solid #eaeaea;padding: 20px 0;margin-bottom: 20px;}
+.addr-icon {float: left;position: relative;padding-left: 35px;font-size: 20px;}
+.addr-icon i {position: absolute;left: 0;top: 0;color: #ea0303;}
+.contact-sec .social {position: relative;}
+.contact-sec .social a{color: #343434; border: 1px solid #343434;}
+.contact-sec .social a:hover {color: #ea0303; border: 1px solid #ea0303;}
+.form-control{box-shadow: none; border: 1px solid #ddd; border-radius: 0;height: 40px;}
+.form-control:focus{box-shadow: none; border: 1px solid #ea0303;}
+
+/*APPLY PAGE CSS STARTS*/
+.apply-sec h3{margin: 20px 0 20px;}
+.apply-sec .nav.nav-tabs{text-align: center;border: 0;}
+.apply-sec .nav.nav-tabs li{float: none; display: inline-block;}
+.apply-sec .nav.nav-tabs li a{border: 1px solid #7d7d7d; margin: 0;border-radius: 0;color: #7d7d7d;}
+.apply-sec .nav.nav-tabs li a:focus{outline: 0; background: none;}
+.apply-sec .nav.nav-tabs li a:hover {background: transparent;}
+.apply-sec .nav.nav-tabs li.active a{background: #ea0303; color: #fff;border: 1px solid #ea0303;}
+.browse-label {border: 1px solid #dbdad4;padding: 5px;width: 50%;}
+.browse-label .browse-btn {border-radius: 0px;background: #ea0303;border: 0px;color: #fff;padding: 5px 15px;margin-right: 10px;}
+input[type="file"] {background: transparent none repeat scroll 0 0;border: 1px solid #000;display: block;	padding: 10px 50px;display: none;}
+
+
+/*NEWS PAGE CSS STARTS*/
+.news-div{margin: 20px 0;}
+.news-info{margin: 30px 0 0;}
+.news-img {overflow: hidden;}
+.news-img img{width: 100%; transition: all ease 0.5s; -webkit-transition: all ease 0.5s;}
+.news-div:hover img{transform: scale(1.1); -webkit-transform: scale(1.1);}
+.news-div:hover h4{color: #ea0303;  transition: all ease 0.3s; -webkit-transition: all ease 0.3s;}
+.news h3{text-align: center;}
+.news-div a {display: block;}
+
+/*PUBLISH PAGE CSS STARTS*/
+.reg-form{max-width: 400px; margin: 50px auto; background: #eee; padding: 20px 20px;text-align: center;}
+.reg-form h3{margin-bottom: 30px;}
+.reg-form .red-btn {width: 100%;}
+
+
+
+
+.video-img img{width: 100%;}
+.video-actions .btn{color: #ea0303; border: 1px solid #ea0303;border-radius: 0;
+margin: 20px 0px;
+padding: 5px 15px;}
+.video-actions .btn:hover,.video-actions .btn.active{background: #ea0303; color: #fff;}
+.video-sec{float: left; width: 100%;}
+.video-sec h3{text-align: left; margin-top: 0;}
+.video-left{ width: 65%; float: left;}
+.des { border: 1px solid #eee;padding: 20px 20px 20px;}
+.comment-sec{margin-top: 20px;}
+.comment-sec .reg-form {max-width: 100%;margin: 20px auto;}
+.video-right{float: right; width: 30%;}
+.latest-post{background: #f9f9f9;padding: 10px 10px;}
+.author-detail{background: #f9f9f9;padding: 10px 10px; margin-top: 20px;}
+.author-div span{float: right;}
+.latest-div{position: relative; padding: 10px 0 10px 80px}
+.latest-img{position: absolute; left: 0; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); width: 70px;}
+
+
+
+
+
+
+@media screen and (max-width:1199px){
+    .item-bg1 {padding: 20% 0;}
+    .left-sec ul li a {padding: 15px 20px;}
+}
+
+@media screen and (max-width:991px){
+    .left-sec {	width: 30%;	position: absolute;left: -100%; transition: all ease 0.5s;z-index: 9;}
+    .right-sec {width: 100%;float: left;}
+    .menu-icon {display: block;font-size: 20px;width: 20%;float: left;text-align: center;cursor: pointer;color: #fff;}
+    .serach-box {float: left;width: 80%;}
+    .left-sec.show {left: 0;z-index: 9;}
+    
+    /*ABOUT PAGE CSS STARTS*/
+    .about-left {display: inline-block;width: 100%;padding-right: 0;}
+    .about-right {display: inline-block;width: 100%;padding-top: 20px;}
+}
+
+@media screen and (max-width:767px){
+    .left-sec {	width: 50%;}
+    .right-top-left {width: 40%; padding: 10px 0 10px 0px;}
+    .menu-icon {width: 15%;}
+    .serach-box {width: 85%;}
+    .right-top-right {width: 60%;}
+    .upload {padding: 11px 10px;}
+    .white-btn {font-size: 13px;}
+    .sign a {font-size: 13px;}
+    .right-bottom {padding: 20px 10px;}
+    .item-bg1 {padding: 25% 0;}
+    .banner-text h1 {font-size: 40px;}
+    .banner-text h2 {top: -5px;font-size: 20px;}
+    .banner-text p {margin: 10px 0;font-size: 14px;}
+    .banner-text .white-btn {font-size: 13px;}
+    .video-sec .owl-prev {left: 0;}
+    .video-sec .owl-next {right: 0;}
+    .video-sec .owl-carousel .item{margin: 0 auto; width: 90%;}
+    .bottom-banner {padding: 20px 20px;}
+}
+
+@media screen and (max-width:479px){
+    .right-top-left {width: 100%;}
+    .right-top-right {width: 100%;}
+    .bottom-banner {padding: 10px 10px;}
+    
+    /*ABOUT PAGE CSS STARTS*/
+    .team-sec {padding: 20px 5px;}
+}
+
+
+
+input[type="file"] {display: block;}
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+}
+
+
+
+
