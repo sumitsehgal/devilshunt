@@ -116,6 +116,8 @@
 <script src="{{ asset('js/resumable.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
     
+<script src="http://affiliates.hostgator.in/templates/source/pagepeels/jquery.peelback.js"></script>
+<script src="http://affiliates.hostgator.in/idevpagepeels.php?id=10760&peel=4"></script>
 
 </body>
 </html>
