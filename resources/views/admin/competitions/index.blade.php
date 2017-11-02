@@ -33,7 +33,7 @@
                                 <th>#<i class="icon-sort"></i><i class="icon-sort-down"></i> <i class="icon-sort-up"></i></th>
                                 <th>Name<i class="icon-sort"></i><i class="icon-sort-down"></i> <i class="icon-sort-up"></i></th>
                                 <th>Description<i class="icon-sort"></i><i class="icon-sort-down"></i> <i class="icon-sort-up"></i></th>
-                                <th colspan="2">Action<i class="icon-sort"></i><i class="icon-sort-down"></i> <i class="icon-sort-up"></i></th>
+                                <th colspan="3">Action<i class="icon-sort"></i><i class="icon-sort-down"></i> <i class="icon-sort-up"></i></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,6 +50,7 @@
                                 		<a href="javascript:void(0);" class="delete"><i class="icon-remove"></i> Delete</a>
                                 	</form>
                                 </td>
+                                <td>@if($competition->status == 0) <a href="javascript:void(0);" class="btn btn-danger">Not Active</a> @elseif($competition->isstart == 1 && $competition->isend == 0 ) <a href="javascript:void(0);" class="btn btn-warning">Running</a> @elseif($competition->isend == 1) <a href="javascript:void(0);" class="btn btn-success">Ended</a> @elseif(array_key_exists($competition->id,$readyToStart) && $readyToStart[$competition->id] >= $competition->minimum_candidates) <a href="javascript:void();" onclick="alert('Need to Add functionality');" class="btn btn-primary"> Ready to Start </a>   @endif</td>
                             </tr>
                             @endforeach
 						</tbody>

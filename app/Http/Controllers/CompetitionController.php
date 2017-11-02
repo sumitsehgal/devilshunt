@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
+use DB;
 
 class CompetitionController extends Controller
 {
@@ -22,9 +23,13 @@ class CompetitionController extends Controller
     public function index()
     {
         $competitions = Competition::paginate(25);
+        // List of Competitions that are not running and ready for run.
+       //  CompetitionUnit::where(['status'=> 0])->groupBy('competition_id')->
+        $readyToStart = DB::table('competition_units')->selectRaw('competition_id, count(*) as total')->where(['status'=>'0'])->groupBy('competition_id')->pluck('total','competition_id')->toArray();
+        //print_r($readyToStart);
         /*CompetitionUnit::where(['status'=>'0'])
         Competition::where(['isstart'=>'0','isend'=>'0']);*/
-        return View::make('admin.competitions.index',['competitions'=>$competitions]);
+        return View::make('admin.competitions.index',['competitions'=>$competitions, 'readyToStart' => $readyToStart]);
     }
 
     /**
